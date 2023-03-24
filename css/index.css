@@ -927,6 +927,7 @@ header {
   line-height: 45px;
   font-weight: 300;
   text-align: left;
+  font-weight: 500;
   margin-bottom: 0.5rem;
   font-family: var(--font-minor);
   color: #313131;
@@ -935,7 +936,7 @@ header {
 .subscriptionleft__view p {
   margin: 0px 0px 30px 0px;
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 500;
   line-height: 30px;
   text-align: left;
   color: #313131;
@@ -996,6 +997,11 @@ header {
   line-height: 1.5;
 }
 
+.subscription__right a:hover {
+  transform: translateY(-2px);
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.3);
+}
+
 @media screen and (max-width: 1200px) {
   .subscription__view {
     max-width: 1140px;
@@ -1040,7 +1046,7 @@ header {
   }
 }
 
-/* SCHEDULE */
+/* ==================          SCHEDULE              ===================*/
 
 .schedule__view {
   background-image: url('../assets/18.jpg');
@@ -1081,10 +1087,6 @@ header {
   position: relative;
   z-index: 3;
   text-align: center;
-  /* display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column; */
 }
 
 .schedule__title {
@@ -1128,6 +1130,8 @@ header {
   font-family: var(--font-header);
 }
 
+/* ==========                   FOOTER          ================*/
+
 footer {
   padding: 120px 0 0px;
   background: var(--main-color);
@@ -1136,12 +1140,7 @@ footer {
 
 .footer__view {
   display: flex;
-  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  margin-right: -15px;
-  margin-left: -15px;
-  display: flex;
-  /* align-items: center; */
   justify-content: space-between;
 }
 
@@ -1149,6 +1148,7 @@ footer {
 .uil-whatsapp,
 .uil-envelope-alt {
   color: #707070;
+  transition: all 0.3s ease-in-out;
 }
 
 .uil-whatsapp:hover {
@@ -1164,7 +1164,6 @@ footer {
 }
 
 .footer__right {
-  -ms-flex: 0 0 33.333333%;
   flex: 0 0 33.333333%;
   max-width: 33.333333%;
   position: relative;
@@ -1176,6 +1175,7 @@ footer {
   font-size: 16px;
   line-height: 1.6;
   font-family: var(--font-body);
+  transition: all 0.3s ease-in-out;
 }
 
 .name__link {
@@ -1238,6 +1238,7 @@ footer ul li {
   text-transform: uppercase;
   letter-spacing: 1.56px;
   font-family: var(--font-minor);
+  cursor: pointer;
 }
 
 .footer__btn:hover {
@@ -1252,14 +1253,9 @@ footer ul li {
   align-items: center;
   justify-content: center;
   padding-bottom: 1rem;
-}
-.copyright {
-  text-align: center;
-  font-size: 15px;
-  font-weight: 500;
-  line-height: 28px;
   font-family: var(--font-body);
 }
+
 @media screen and (max-width: 992px) {
   .footer__right {
     -ms-flex: 0 0 33.333333%;
