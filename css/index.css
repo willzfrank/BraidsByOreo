@@ -448,7 +448,7 @@ header {
   }
 }
 
-/* OUR SERVICES */
+/*  ==============================                       OUR SERVICES                  ==================*/
 
 .our__services {
   background-color: #fbd9e2;
@@ -576,7 +576,57 @@ header {
   }
 }
 
-/* OUR PRICING */
+@media screen and (min-width: 768px) and (max-width: 1114px) {
+  body {
+    overflow-x: hidden !important;
+  }
+}
+
+@media screen and (min-width: 1113px) and (max-width: 1115px) {
+  body {
+    overflow-x: hidden !important;
+  }
+}
+
+@media screen and (max-width: 428px) {
+  .our__services {
+    padding: 420px 0 150px;
+  }
+
+  .choose__us h1 {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .our__services {
+    padding: 220px 0 150px;
+  }
+}
+
+@media screen and (max-width: 885px) {
+  .services__imgcontent img {
+    display: none;
+  }
+  .services__imgcontent {
+    display: none;
+  }
+
+  .choose__us {
+    width: 100%;
+    /* padding: 10px 30px; */
+  }
+
+  .services__content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+/* ===============                       OUR PRICING          ======================== */
 
 .our__pricing {
   background-image: url('../assets/ourservices.jpg');
@@ -772,8 +822,6 @@ header {
   }
 
   .pricing__col {
-    /* flex: 0 0 100%;
-    max-width: 100%; */
     position: relative;
     width: 100%;
     min-height: 1px;
@@ -1265,6 +1313,7 @@ footer ul li {
   align-items: center;
   justify-content: center;
   padding-bottom: 1rem;
+  text-align: center;
   font-family: var(--font-body);
 }
 
