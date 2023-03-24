@@ -829,18 +829,30 @@ header {
 }
 
 @media screen and (max-width: 768px) {
+  .pricingimg__view img {
+    display: none;
+  }
   .pricing__rowcontainer {
     max-width: 720px;
   }
 
   .pricingleft__view {
-    flex: 0 0 50%;
-    max-width: 50%;
+    flex: 0 0 100%;
+    max-width: 100%;
   }
 
   .pricing__col {
     flex: 0 0 100%;
     max-width: 100%;
+  }
+
+  .pricing__subtitle {
+    font-family: vidaloka, Sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 1.3em;
+    color: #313131;
+    text-align: center;
   }
 }
 
