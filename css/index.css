@@ -598,7 +598,7 @@ header {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 767px) and (max-width: 769px) {
   .our__services {
     padding: 220px 0 150px;
   }
