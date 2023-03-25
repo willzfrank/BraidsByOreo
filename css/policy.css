@@ -8,7 +8,7 @@
 
 .policy__view {
   padding: 5rem 0;
-  background-color: var(--main-color);
+  /* background-color: var(--main-color); */
 }
 
 .policy__view div {
@@ -37,7 +37,7 @@ li {
   line-height: 1.6;
   overflow-wrap: break-word;
   margin-bottom: 1rem;
-  font-weight: 500;
+  /* font-weight: 500; */
   transition: all 0.4s ease-in-out;
 }
 

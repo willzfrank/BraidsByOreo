@@ -12,6 +12,10 @@
   box-sizing: border-box;
 } */
 
+body {
+  scroll-behavior: smooth;
+}
+
 :root {
   --main-color: #fcb7ca;
   --text-color: #8f8685;
@@ -55,7 +59,7 @@ header {
   font-size: 15px;
   font-weight: 400;
   line-height: 1.4;
-  padding: 10px;
+  padding: 5px 10px;
   position: sticky;
   top: 0;
   transition: padding 0.3s ease-out;
@@ -102,6 +106,7 @@ header {
 .nav__list li {
   transition: 0.2s ease-out;
   cursor: pointer;
+  font-family: var(--font-minor);
 }
 
 .nav__list li:hover {
