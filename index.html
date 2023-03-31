@@ -24,7 +24,7 @@
               <li>Policy</li>
               <li>Contact</li>
             </ul>
-            <button>
+            <button class="reserve">
               <i class="uil uil-calendar-alt m-20"></i>RESERVATION
             </button>
           </div>
@@ -48,7 +48,7 @@
             expectations.</span
           >
 
-          <button>MAKE A RESERVATION</button>
+          <button type="button" class="reserve">MAKE A RESERVATION</button>
         </div>
         <div class="header__img">
           <div class="headerimg__content">
@@ -61,5 +61,13 @@
         </div>
       </div>
     </header>
+
+    <script>
+      const reserve = document.querySelector('.reserve');
+
+      reserve.addEventListener('click', () => {
+        location.href = 'easyappointments';
+      })
+    </script>
   </body>
 </html>
