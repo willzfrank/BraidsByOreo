@@ -282,6 +282,14 @@ header {
 
 /* MOBILE NAVBAR */
 
+.mobile__nav .navMobile__mainView {
+  display: none;
+}
+
+.mobile__nav .navMobile__mainView.show {
+  display: block;
+}
+
 .mobile__nav {
   display: none;
   position: relative;
@@ -319,11 +327,11 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 1rem;
+  gap: 2rem;
   font-family: var(--font-minor);
   flex-direction: column;
   /* font-weight: bold; */
-  font-size: 25px;
+  /* font-size: 25px; */
 }
 
 .mobileNav__btn {
@@ -353,6 +361,10 @@ header {
 }
 
 @media screen and (min-width: 768px) and (max-width: 884px) {
+  .uil-bars,
+  .uil-times {
+    font-size: 35px;
+  }
   .navMobile__social {
     font-size: 30px;
   }
@@ -1071,7 +1083,7 @@ header {
   box-shadow: 0 0 0 0 #ffffff;
 }
 
-.subscription__right a {
+.subscription__right span {
   font-weight: 600;
   font-family: var(--font-minor);
   border-radius: 5px !important;
@@ -1087,9 +1099,10 @@ header {
   transition: all 0.3s ease-in-out;
   -webkit-transition: all 0.3s ease-in-out;
   line-height: 1.5;
+  cursor: pointer;
 }
 
-.subscription__right a:hover {
+.subscription__right span:hover {
   transform: translateY(-2px);
   box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.3);
 }
@@ -1300,6 +1313,10 @@ footer {
   font-weight: 600;
   line-height: 28px;
   font-family: var(--font-header);
+}
+
+.footer__middle ul li {
+  cursor: pointer;
 }
 
 .footer__view h3,

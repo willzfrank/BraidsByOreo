@@ -12,7 +12,6 @@
     <title>Home | BraidsByOreo</title>
   </head>
   <body>
-
     <nav class="main__nav">
       <div class="nav__content">
         <h1>
@@ -30,20 +29,22 @@
               <a href="./pages/contact.html">Contact</a>
             </li>
           </ul>
-          <button><i class="uil uil-calendar-alt m-20"></i>BOOKING</button>
+          <button id="myButton">
+            <i class="uil uil-calendar-alt m-20"></i>BOOKING
+          </button>
         </div>
       </div>
     </nav>
     <nav class="mobile__nav">
       <h1>BraidsByOreo</h1>
-      <i class="uil uil-bars"></i>
+      <i class="uil uil-bars" style="cursor: pointer"></i>
       <div class="navMobile__mainView">
         <div class="navMobile__closeView">
-          <i class="uil uil-times"></i>
+          <i class="uil uil-times" style="cursor: pointer"></i>
         </div>
         <div class="navMobile__bodyView">
           <h1>BraidsByOreo</h1>
-          <ul class='navMobile__list'>
+          <ul class="navMobile__list">
             <li>
               <a href="./index.html">Home</a>
             </li>
@@ -54,7 +55,7 @@
               <a href="./pages/contact.html">Contact</a>
             </li>
           </ul>
-          <button class="mobileNav__btn">
+          <button class="mobileNav__btn" id="bookHereButton">
             <i class="uil uil-calendar-alt m-20"></i>BOOKING
           </button>
           <ul class="navMobile__social">
@@ -90,7 +91,7 @@
           >
 
           <div class="header__btnview">
-            <button>BOOK HERE</button>
+            <button id="bookingButton">BOOK HERE</button>
           </div>
         </div>
         <div class="header__img">
@@ -274,7 +275,7 @@
             </p>
           </div>
           <div class="subscription__right">
-            <a href="http://" rel="noopener noreferrer">Get Appointment</a>
+            <span id="getAppointmentLink">Get Appointment</span>
           </div>
         </div>
       </div>
@@ -359,7 +360,7 @@
               <li>
                 <a href="./pages/contact.html">Contact</a>
               </li>
-              <li>Book Appointment</li>
+              <li id="bookAppointmentLi">Book Appointment</li>
             </ul>
           </div>
           <div class="footer__right">
@@ -378,7 +379,7 @@
                 <span>10:00AM - 11:30AM</span>
               </li>
               <li class="footer__btn">
-                <a href="#" rel="noopener noreferrer">Get Appointment</a>
+                <span id="bookAppointmentFooter">Get Appointment</span>
               </li>
             </ul>
           </div>
@@ -399,7 +400,39 @@
         </div>
       </div>
     </footer>
->>>>>>> 1d01a0bcde432c6d145ae31c26484183d007c4ca
   </body>
   <script src="./js/main.js"></script>
+  <script>
+    document.getElementById('myButton').addEventListener('click', function () {
+      location.href = 'easyappointments';
+    });
+
+    document
+      .getElementById('bookingButton')
+      .addEventListener('click', function () {
+        location.href = 'easyappointments';
+      });
+
+    document
+      .getElementById('bookHereButton')
+      .addEventListener('click', function () {
+        location.href = 'easyappointments';
+      });
+
+    document
+      .getElementById('getAppointmentLink')
+      .addEventListener('click', function () {
+        location.href = 'easyappointments';
+      });
+    document
+      .getElementById('bookAppointmentLi')
+      .addEventListener('click', function () {
+        location.href = 'easyappointments';
+      });
+    document
+      .getElementById('bookAppointmentFooter')
+      .addEventListener('click', function () {
+        location.href = 'easyappointments';
+      });
+  </script>
 </html>

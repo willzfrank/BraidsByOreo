@@ -30,13 +30,60 @@
               <a href="./contact.html">Contact</a>
             </li>
           </ul>
-          <button><i class="uil uil-calendar-alt m-20"></i>RESERVATION</button>
+          <button id="myButton">
+            <i class="uil uil-calendar-alt m-20"></i>RESERVATION
+          </button>
         </div>
       </div>
     </nav>
     <nav class="mobile__nav">
-      <h1>BraidsByOreo</h1>
-      <i class="uil uil-bars"></i>
+      <h1>
+        <a href="/index.html">BraidsByOreo</a>
+      </h1>
+      <i class="uil uil-bars" style="cursor: pointer"></i>
+      <div class="navMobile__mainView">
+        <div class="navMobile__closeView">
+          <i class="uil uil-times" style="cursor: pointer"></i>
+        </div>
+        <div class="navMobile__bodyView">
+          <h1>
+            <a href="/index.html">BraidsByOreo</a>
+          </h1>
+          <ul class="navMobile__list">
+            <li>
+              <a href="/index.html">Home</a>
+            </li>
+            <li>
+              <a href="./policy.html">Policy</a>
+            </li>
+            <li>
+              <a href="./contact.html">Contact</a>
+            </li>
+          </ul>
+          <button class="mobileNav__btn" id="bookHereButton">
+            <i class="uil uil-calendar-alt m-20"></i>BOOKING
+          </button>
+          <ul class="navMobile__social">
+            <li>
+              <a
+                href="https://api.whatsapp.com/send?phone=918327088429"
+                target="_blank"
+                ><i class="uil uil-whatsapp"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/Oreoluwaaa/" target="_blank"
+                ><i class="uil uil-instagram"></i>
+              </a>
+            </li>
+            <li>
+              <a href="mailto:ayindeoreoluwa832@gmail.com" target="_blank"
+                ><i class="uil uil-envelope-alt"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </nav>
 
     <main>
@@ -44,23 +91,23 @@
         <div>
           <h1>POLICY</h1>
           <ol>
-            <li>
+            <li class="policy__text">
               We require a non-refundable deposit of $50 to secure your
               appointment, which will be applied towards your payment. The
               remaining balance is due upon completion of the service. Payment
               can be made with cash, Zelle, or CashApp.
             </li>
-            <li>
+            <li class="policy__text">
               For your convenience, i will be traveling to all my clients within
               a one-hour radius.
             </li>
-            <li>
+            <li class="policy__text">
               Please ensure your hair is washed before the scheduled
               appointment. We will gladly blow-dry your hair if necessary. If
               you require additional services, kindly inform us prior to
               commencing braiding to allow for proper scheduling.
             </li>
-            <li>
+            <li class="policy__text">
               Please note, your appointment will not be confirmed until the
               deposit has been received. The deposit can be made via CashApp at
               $busola166.
@@ -116,7 +163,7 @@
               <li>
                 <a href="./contact.html">Contact</a>
               </li>
-              <li>Book Appointment</li>
+              <li id="bookAppointmentLi">Book Appointment</li>
             </ul>
           </div>
           <div class="footer__right">
@@ -135,7 +182,7 @@
                 <span>10:00AM - 11:30AM</span>
               </li>
               <li class="footer__btn">
-                <a href="#" rel="noopener noreferrer">Get Appointment</a>
+                <span id="bookAppointmentFooter">Get Appointment</span>
               </li>
             </ul>
           </div>
@@ -156,5 +203,28 @@
         </div>
       </div>
     </footer>
+    <script src="../js/main.js"></script>
+    <script>
+      document
+        .getElementById('myButton')
+        .addEventListener('click', function () {
+          location.href = '../easyappointments';
+        });
+      document
+        .getElementById('bookAppointmentLi')
+        .addEventListener('click', function () {
+          location.href = '../easyappointments';
+        });
+      document
+        .getElementById('bookAppointmentFooter')
+        .addEventListener('click', function () {
+          location.href = '../easyappointments';
+        });
+      document
+        .getElementById('bookHereButton')
+        .addEventListener('click', function () {
+          location.href = '../easyappointments';
+        });
+    </script>
   </body>
 </html>

@@ -30,13 +30,60 @@
               <a href="#">Contact</a>
             </li>
           </ul>
-          <button><i class="uil uil-calendar-alt m-20"></i>RESERVATION</button>
+          <button id="myButton">
+            <i class="uil uil-calendar-alt m-20"></i>RESERVATION
+          </button>
         </div>
       </div>
     </nav>
     <nav class="mobile__nav">
-      <h1>BraidsByOreo</h1>
-      <i class="uil uil-bars"></i>
+      <h1>
+        <a href="/index.html">BraidsByOreo</a>
+      </h1>
+      <i class="uil uil-bars" style="cursor: pointer"></i>
+      <div class="navMobile__mainView">
+        <div class="navMobile__closeView">
+          <i class="uil uil-times" style="cursor: pointer"></i>
+        </div>
+        <div class="navMobile__bodyView">
+          <h1>
+            <a href="/index.html">BraidsByOreo</a>
+          </h1>
+          <ul class="navMobile__list">
+            <li>
+              <a href="/index.html">Home</a>
+            </li>
+            <li>
+              <a href="./policy.html">Policy</a>
+            </li>
+            <li>
+              <a href="./contact.html">Contact</a>
+            </li>
+          </ul>
+          <button class="mobileNav__btn" id="bookHereButton">
+            <i class="uil uil-calendar-alt m-20"></i>BOOKING
+          </button>
+          <ul class="navMobile__social">
+            <li>
+              <a
+                href="https://api.whatsapp.com/send?phone=918327088429"
+                target="_blank"
+                ><i class="uil uil-whatsapp"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/Oreoluwaaa/" target="_blank"
+                ><i class="uil uil-instagram"></i>
+              </a>
+            </li>
+            <li>
+              <a href="mailto:ayindeoreoluwa832@gmail.com" target="_blank"
+                ><i class="uil uil-envelope-alt"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </nav>
 
     <main>
@@ -124,7 +171,7 @@
               <li>
                 <a href="#">Contact</a>
               </li>
-              <li>Book Appointment</li>
+              <li id="bookAppointmentLi">Book Appointment</li>
             </ul>
           </div>
           <div class="footer__right">
@@ -143,7 +190,7 @@
                 <span>10:00AM - 11:30AM</span>
               </li>
               <li class="footer__btn">
-                <a href="#" rel="noopener noreferrer">Get Appointment</a>
+                <span id="bookAppointmentFooter">Get Appointment</span>
               </li>
             </ul>
           </div>
@@ -164,5 +211,29 @@
         </div>
       </div>
     </footer>
+    <script src="../js/main.js"></script>
+
+    <script>
+      document
+        .getElementById('myButton')
+        .addEventListener('click', function () {
+          location.href = '../easyappointments';
+        });
+      document
+        .getElementById('bookAppointmentLi')
+        .addEventListener('click', function () {
+          location.href = '../easyappointments';
+        });
+      document
+        .getElementById('bookAppointmentFooter')
+        .addEventListener('click', function () {
+          location.href = '../easyappointments';
+        });
+      document
+        .getElementById('bookHereButton')
+        .addEventListener('click', function () {
+          location.href = '../easyappointments';
+        });
+    </script>
   </body>
 </html>

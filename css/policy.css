@@ -30,7 +30,7 @@
   transition: all 0.3s ease-in-out;
 }
 
-li {
+.policy__text {
   font-size: 18px;
   /* font-weight: 400; */
   font-family: var(--font-minor);
