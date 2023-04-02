@@ -247,8 +247,11 @@ header {
   font-weight: 500;
   text-transform: uppercase;
   letter-spacing: 1.56px;
-  background-color: rgb(255, 188, 118);
-  color: var(--font-body);
+  /* background-color: rgb(255, 188, 118); */
+  background-color: white;
+  /* color: var(--font-body); */
+  color: #f06c81;
+
   border: none;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
@@ -885,7 +888,8 @@ header {
   clear: both;
   content: '';
 }
-.pricing__title {
+.pricing__title,
+.h3__one {
   font-size: 32px;
   font-weight: 400;
   text-transform: capitalize;
@@ -974,7 +978,7 @@ header {
 }
 
 .subscription__overlay {
-  background-color: transparent;
+  background-color: #ffffffd3;
   position: absolute;
   top: 0;
   left: 0;
@@ -1063,10 +1067,15 @@ header {
 
 .h3__two {
   box-shadow: 0 0 0 0 #ffffff;
-  font-size: 35px;
+  font-size: 30px !important;
   line-height: 45px;
   font-weight: bolder;
   font-family: var(--font-minor);
+  margin-top: 0.5rem;
+}
+
+.h3__one {
+  margin-bottom: 0.5rem;
 }
 
 .subscription__right {
@@ -1240,7 +1249,7 @@ header {
 footer {
   padding: 120px 0 0px;
   background: var(--main-color);
-  color: #707070;
+  /* color: #707070; */
 }
 
 .footer__view {
@@ -1249,10 +1258,14 @@ footer {
   justify-content: space-between;
 }
 
+.uil-whatsapp {
+  margin-right: 3px;
+}
+
 .uil-instagram,
 .uil-whatsapp,
 .uil-envelope-alt {
-  color: #707070;
+  /* color: #707070; */
   transition: all 0.3s ease-in-out;
 }
 
